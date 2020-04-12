@@ -34,12 +34,12 @@ const UserDetailBox = (props) => {
     }
     setAnchorEl(null);
   };
-  const { className, title, route, id, value, ...rest } = props;
+  const { className, title, route, id, value } = props;
 
   const classes = useStyles({ ...props });
 
   return (
-    <Card {...rest} className={clsx(classes.root, className)} elevation={0}>
+    <Card className={clsx(classes.root, className)} elevation={0}>
       <CardHeader
         action={
           <>

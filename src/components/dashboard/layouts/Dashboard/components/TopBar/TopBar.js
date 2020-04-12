@@ -24,7 +24,11 @@ function Topbar(props) {
           <div className={classes.logo}>
             <div align="center">
               Full Throttle Labs
-              <img src="/ftl.png" alt="logo" className={classes.logoimg}></img>
+              <img
+                src="https://i.ibb.co/M5C5PjB/ftl.png"
+                alt="logo"
+                className={classes.logoimg}
+              ></img>
             </div>
           </div>
           <IconButton
@@ -37,7 +41,7 @@ function Topbar(props) {
         </div>
         <ThemeToggler className={classes.themeToggler} />
         <IconButton className={classes.homeButton}>
-          <Link to="/details">
+          <Link to="/">
             <HomeIcon className={clsx(classes.homeicon, className)} />
           </Link>
         </IconButton>

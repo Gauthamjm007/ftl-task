@@ -2,7 +2,6 @@ import { red, blue, lightBlue, yellow, green } from "@material-ui/core/colors";
 
 const white = "#fff";
 const black = "#000";
-//cf2028
 const themePalette = {
   material: {
     type: "light",
@@ -25,7 +24,7 @@ const themePalette = {
     contrastText: white,
   },
 };
-// theme on of basil, crane, pinky, rally, reply
+
 const makePalette = (type) => {
   const { contrastText, ...rest } = themePalette[type];
   return {

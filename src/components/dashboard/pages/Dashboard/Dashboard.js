@@ -63,7 +63,7 @@ const Dashboard = (props) => {
           />
         </Grid>
 
-        <Grid item lg={5} md={6} xl={5} xs={12}>
+        <Grid item lg={4} md={6} xl={5} xs={12}>
           <Widget title="All Users Logs">
             <SimpleBar
               data={props.members.map((data) => {
@@ -75,7 +75,7 @@ const Dashboard = (props) => {
             />
           </Widget>
         </Grid>
-        <Grid item lg={7} md={6} xl={7} xs={12}>
+        <Grid item lg={8} md={12} xl={7} xs={12}>
           <Widget title="Members Details">
             <SimpleTable data={props.members} />
           </Widget>

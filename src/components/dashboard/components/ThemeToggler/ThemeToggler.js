@@ -16,7 +16,9 @@ export default function ThemeToggler({ className }) {
     checkedA: true,
   });
   const { theme, setTheme } = React.useContext(ThemeContext);
-
+  if (false) {
+    console.log(theme);
+  }
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
     event.target.checked ? setTheme("material") : setTheme("reply");

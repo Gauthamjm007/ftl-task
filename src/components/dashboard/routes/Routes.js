@@ -1,7 +1,6 @@
 import React from "react";
 import { Switch, Redirect } from "react-router-dom";
 import Dashboard from "../pages/Dashboard/Dashboard";
-
 import UserDetails from "../pages/UserDetails/UserDetails";
 import WithLayoutRoute from "./WithLayoutRoute";
 import DashboardLayout from "../layouts/Dashboard/Dashboard";
@@ -16,12 +15,12 @@ function Routes() {
         layout={DashboardLayout}
         path="/dashboard"
       />
-      
+
       <WithLayoutRoute
         component={UserDetails}
         exact
         layout={DashboardLayout}
-        path="/details"
+        path="/"
       />
       <WithLayoutRoute
         component={UserCalendarDetails}
@@ -30,7 +29,7 @@ function Routes() {
         path="/member/:id"
       />
 
-      <Redirect to="/details" />
+      <Redirect to="/" />
     </Switch>
   );
 }

@@ -3,35 +3,10 @@ import { Grid } from "@material-ui/core";
 import { UserDetailBox } from "../../components";
 import useStyles from "./styles";
 import { connect } from "react-redux";
-import moment from "moment";
 import minutesDiff from "../../../../selectors/minutesDiff";
 
 const UserDetails = (props) => {
   const classes = useStyles();
-
-  console.log(
-    moment(new Date("Feb 1 2020 1:43 AM")).diff(
-      moment(new Date("Feb 1 2020 1:33 PM")),
-      "hours"
-    ),
-    "moment"
-  );
-
-  console.log(
-    props.members.map((ele) => {
-      return ele.activity_periods
-        .map((ele2) => {
-          return Math.abs(
-            moment(new Date(ele2.start_time)).diff(
-              new Date(ele2.end_time),
-              "minutes"
-            )
-          );
-        })
-        .reduce((a, b) => a + b, 0);
-    }),
-    "members"
-  );
 
   return (
     <div className={classes.root}>
