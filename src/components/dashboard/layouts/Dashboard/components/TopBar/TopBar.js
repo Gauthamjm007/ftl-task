@@ -6,10 +6,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import HomeIcon from "@material-ui/icons/Home";
 import { Link } from "react-router-dom";
-
-// Component styles
 import useStyles from "./styles";
-//../../components/ThemeToggler/ThemeToggler
 import ThemeToggler from "../../../../components/ThemeToggler/ThemeToggler";
 
 /**
@@ -43,11 +40,6 @@ function Topbar(props) {
           <Link to="/details">
             <HomeIcon className={clsx(classes.homeicon, className)} />
           </Link>
-        </IconButton>
-        <IconButton className={classes.homeButton}>
-          <a href="../../../../../../styleguide/index.html">
-            <HomeIcon className={clsx(classes.homeicon, className)} />
-          </a>
         </IconButton>
       </Toolbar>
       {children}
