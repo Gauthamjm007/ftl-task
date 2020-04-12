@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91036224370210709004af33998a9c43",
+    "revision": "f0eff9be15b6035b4509f87900bbfe7c",
     "url": "/ftl-task/index.html"
   },
   {
-    "revision": "24fc132a047d3227eb6e",
+    "revision": "8285685dd521ca7b3853",
     "url": "/ftl-task/static/css/main.ed13a496.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ftl-task/static/js/2.8fb24386.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "24fc132a047d3227eb6e",
-    "url": "/ftl-task/static/js/main.86488a0c.chunk.js"
+    "revision": "8285685dd521ca7b3853",
+    "url": "/ftl-task/static/js/main.33c7ae86.chunk.js"
   },
   {
     "revision": "156d7ce66214eda55ba3",

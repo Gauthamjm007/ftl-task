@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ftl-task/static/css/main.ed13a496.chunk.css",
-    "main.js": "/ftl-task/static/js/main.86488a0c.chunk.js",
-    "main.js.map": "/ftl-task/static/js/main.86488a0c.chunk.js.map",
+    "main.js": "/ftl-task/static/js/main.33c7ae86.chunk.js",
+    "main.js.map": "/ftl-task/static/js/main.33c7ae86.chunk.js.map",
     "runtime-main.js": "/ftl-task/static/js/runtime-main.87a4be85.js",
     "runtime-main.js.map": "/ftl-task/static/js/runtime-main.87a4be85.js.map",
     "static/js/2.8fb24386.chunk.js": "/ftl-task/static/js/2.8fb24386.chunk.js",
     "static/js/2.8fb24386.chunk.js.map": "/ftl-task/static/js/2.8fb24386.chunk.js.map",
     "index.html": "/ftl-task/index.html",
-    "precache-manifest.50a858e96bf39fe239fb15c5e1a34066.js": "/ftl-task/precache-manifest.50a858e96bf39fe239fb15c5e1a34066.js",
+    "precache-manifest.c333c671b12317dea36075afa091ea8b.js": "/ftl-task/precache-manifest.c333c671b12317dea36075afa091ea8b.js",
     "service-worker.js": "/ftl-task/service-worker.js",
     "static/css/main.ed13a496.chunk.css.map": "/ftl-task/static/css/main.ed13a496.chunk.css.map",
     "static/js/2.8fb24386.chunk.js.LICENSE.txt": "/ftl-task/static/js/2.8fb24386.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.87a4be85.js",
     "static/js/2.8fb24386.chunk.js",
     "static/css/main.ed13a496.chunk.css",
-    "static/js/main.86488a0c.chunk.js"
+    "static/js/main.33c7ae86.chunk.js"
   ]
 }
