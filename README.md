@@ -11,3 +11,9 @@ Tools and libraries used for building these projects<br/>
 ![theme and side bar](ftl-task3.gif)<br/>
 4.Mobile view and dark theme
 ![theme and side bar](ftl-mobile.gif)<br/>
+
+Challenges that I faced<br/>
+-Calendar view of the users<br/>
+-Responsive design<br/>
+-Calculating the data for dashboard like duration of user spent<br/>
+-using different timezone<br/>

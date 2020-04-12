@@ -34,7 +34,7 @@ const Profile = (props) => {
 Profile.defaultProps = {
   className: "root",
   avatar:
-    "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+    "https://i.ibb.co/Rz8hnQG/logo512.png",
   name: "User 1",
   role: "Admin",
 };
