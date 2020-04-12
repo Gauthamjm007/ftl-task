@@ -1,7 +1,9 @@
 import React from "react";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { useTheme } from "@material-ui/core";
+import PropTypes from "prop-types";
 
+/**react component for graph take a single props of data an array of objects */
 export default function UserGraph(props) {
   const theme = useTheme();
   return (
@@ -17,3 +19,8 @@ export default function UserGraph(props) {
     </ResponsiveContainer>
   );
 }
+
+UserGraph.propType = {
+  //array of objects of keys month and hours
+  data: PropTypes.array,
+};

@@ -10,6 +10,11 @@ import { connect } from "react-redux";
 import minutesDiff from "./../../../../selectors/minutesDiff";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import SimpleBar from "./SimpleBar";
+
+/**
+ * This component is dashboard component it is displayed in main page, on route /dashboard
+ */
+
 const Dashboard = (props) => {
   const classes = useStyles();
 

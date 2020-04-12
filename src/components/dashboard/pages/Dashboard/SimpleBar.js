@@ -1,7 +1,9 @@
 import React from "react";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { useTheme } from "@material-ui/core";
+import PropTypes from "prop-types";
 
+/** This component accepts data of array of objects having keys of user and hours with string and number values respectively */
 export default function SimpleBar(props) {
   const theme = useTheme();
   return (
@@ -17,3 +19,8 @@ export default function SimpleBar(props) {
     </ResponsiveContainer>
   );
 }
+
+SimpleBar.propTypes = {
+  /**accepts array of objects as value */
+  data: PropTypes.array,
+};

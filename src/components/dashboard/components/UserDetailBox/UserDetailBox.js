@@ -17,6 +17,10 @@ import { Link } from "react-router-dom";
 import { removeMember } from "../../../../actions/membersAction";
 import { connect } from "react-redux";
 
+/**
+ * This component is a component for user details, material ui is used
+ */
+
 const UserDetailBox = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 

@@ -12,12 +12,16 @@ import { Widget, PageTitle } from "../../components";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import { Link } from "react-router-dom";
 
+/**
+ *
+ * react view component it doesnt accept any props it imports other components
+ */
+
 const UserCalendarDetails = (props) => {
   const classes = useStyles();
   const names = moment.tz.names();
   const id = props.match.params.id;
   const dataForm = props.members.find((memb) => memb.id === id);
-  console.log(dataForm, "data");
 
   const data = dataForm.activity_periods.map((time) => {
     return {
@@ -28,33 +32,6 @@ const UserCalendarDetails = (props) => {
       tz: dataForm.tz,
     };
   });
-  console.log(data, "data");
-
-  // const data = [
-  //   {
-  //     id: 0,
-  //     title: "All Day Event very long title",
-  //     tz: "America/Los_Angeles",
-  //     allDay: true,
-  //     start: "Feb 1 2020  1:33 PM",
-  //     end: "Feb 1 2020 1:54 PM",
-  //   },
-  //   {
-  //     id: 1,
-  //     title: "Long Event",
-  //     tz: "Asia/Kolkata",
-  //     start: "April 5 2020  11:11 AM",
-  //     end: "April 6 2020 2:00 PM",
-  //   },
-
-  //   {
-  //     id: 2,
-  //     title: "DTS STARTS",
-  //     tz: "America/Los_Angeles",
-  //     start: "Mar 16 2020  5:33 PM",
-  //     end: "Mar 16 2020 8:02 PM",
-  //   },
-  // ];
 
   function timezone(from, to, time) {
     const fromZone = moment.tz(time, from);
@@ -73,18 +50,7 @@ const UserCalendarDetails = (props) => {
       };
     })
   );
-  console.log(
-    dataForm.activity_periods.map((time, i) => {
-      return {
-        month: time.start_time.slice(0, 5),
-        hours: minutesDiffFull(dataForm.activity_periods)[i],
-      };
-    }),
-    "dataform"
-  );
-  console.log(props.match.params.id, "id");
 
-  console.log(event, "old sevent");
   const handleBlur = (e) => {
     const zone = e.target.value.length === 0 ? "Asia/Kolkata" : e.target.value;
     console.log(e.target.value, "value");

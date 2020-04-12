@@ -12,6 +12,10 @@ import useStyles from "./styles";
 //../../components/ThemeToggler/ThemeToggler
 import ThemeToggler from "../../../../components/ThemeToggler/ThemeToggler";
 
+/**
+ * This component is a top bar it accpets 4 props a style ,onToggleSidebar , openSideBar, childreb
+ */
+
 function Topbar(props) {
   const { className, children, openSidebar, onToggleSidebar } = props;
   const classes = useStyles(props);
@@ -40,6 +44,11 @@ function Topbar(props) {
             <HomeIcon className={clsx(classes.homeicon, className)} />
           </Link>
         </IconButton>
+        <IconButton className={classes.homeButton}>
+          <a href="../../../../../../styleguide/index.html">
+            <HomeIcon className={clsx(classes.homeicon, className)} />
+          </a>
+        </IconButton>
       </Toolbar>
       {children}
     </AppBar>
@@ -47,9 +56,13 @@ function Topbar(props) {
 }
 
 Topbar.propTypes = {
+  /** a style class name */
   className: PropTypes.string,
+  /** a call back funciton on toogle */
   onToggleSidebar: PropTypes.func,
+  /** a sidebar on open */
   openSidebar: PropTypes.bool,
+  /** a children to accept props */
   children: PropTypes.node,
 };
 

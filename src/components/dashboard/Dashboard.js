@@ -6,7 +6,7 @@ import Routes from "./routes/Routes";
 import ThemeContext from "./theme/ThemeContext";
 
 function Dashboard() {
-  const [theme, setTheme] = useState("reply");
+  const [theme, setTheme] = useState("material");
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

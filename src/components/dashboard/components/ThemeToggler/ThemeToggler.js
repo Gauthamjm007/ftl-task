@@ -8,14 +8,16 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import NightsStayIcon from "@material-ui/icons/NightsStay";
 
+/**
+ * This component is a theme toggler to set light or dark
+ */
 export default function ThemeToggler({ className }) {
   const [state, setState] = React.useState({
-    checkedA: false,
+    checkedA: true,
   });
   const { theme, setTheme } = React.useContext(ThemeContext);
 
   const handleChange = (event) => {
-    console.log(theme);
     setState({ ...state, [event.target.name]: event.target.checked });
     event.target.checked ? setTheme("material") : setTheme("reply");
   };
@@ -46,5 +48,6 @@ export default function ThemeToggler({ className }) {
 }
 
 ThemeToggler.propTypes = {
+  //style of string
   className: PropTypes.string,
 };

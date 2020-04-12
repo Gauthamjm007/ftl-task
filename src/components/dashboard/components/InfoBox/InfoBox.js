@@ -10,6 +10,10 @@ import {
 } from "@material-ui/core";
 import useStyles from "./styles";
 
+/**
+ * This component is a grid based , accepts 3 props title of the card, the icon for it and value which will be displayed
+ * material ui components are used
+ */
 const InfoBox = (props) => {
   const { className, title, value, icon, caption, ...rest } = props;
 
@@ -35,12 +39,19 @@ const InfoBox = (props) => {
   );
 };
 
+InfoBox.defaultProps = {
+  className: "root",
+  title: "Title",
+  value: "value",
+};
+
 InfoBox.propTypes = {
+  /** accepts style for class*/
   className: PropTypes.string,
+  /** accepts string value for heading*/
   title: PropTypes.string,
+  /** accepts number for displaying*/
   value: PropTypes.string,
-  differenceValue: PropTypes.string,
-  caption: PropTypes.string,
 };
 
 export default InfoBox;
